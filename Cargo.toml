@@ -1,0 +1,21 @@
+[package]
+name = "simple-plot"
+version = "0.1.0"
+edition = "2021"
+
+authors = ["NAGASHIMA Koki <kkngsm@gmail.com>"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/kkngsm/simple-plot"
+documentation = "https://docs.rs/simple-plot"
+description = "Simple plot for one-dimensional vectors"
+keywords = ["plot", "chart"]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+plotly = "0.7.0"
+
+[[example]]
+name = "plot"
