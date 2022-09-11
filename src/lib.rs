@@ -45,7 +45,7 @@ pub mod _plotly {
     /// ```
     #[macro_export]
     macro_rules! plot {
-        ($title:expr, $($ys:expr), +) => {
+        ($title:expr, $($ys:expr), +) => {{
             use simple_plot::_plotly::{Mode, Title, Plot, Scatter,Layout};
             let layout = Layout::new().title(Title::new($title));
             let mut plot = Plot::new();
@@ -59,6 +59,6 @@ pub mod _plotly {
             )+
             plot.set_layout(layout);
             plot.show();
-        }
+        }}
     }
 }
